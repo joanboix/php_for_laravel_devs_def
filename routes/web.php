@@ -1,30 +1,34 @@
 <?php
 
+use App\Models\Task;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $task1 = new stdClass();
-    $task1->id = 1;
-    $task1->title = "Task1";
-    $task1->description = "Tasca1 descr";
-    $task1->completed = 1;
-    $task2 = new stdClass();
-    $task2->id = 2;
-    $task2->title = "Task2";
-    $task2->description = "Tasca2 descr";
-    $task2->completed = 1;
-    $task3 = new stdClass();
-    $task3->id = 3;
-    $task3->title = "Task3";
-    $task3->description = "Tasca3 descr";
-    $task3->completed = 1;
-    $tasks = [
-        $task1,
-        $task2,
-        $task3
-    ];
+//    $task1 = Task::create([
+//        'title' => 'Tasca1',
+//        'description' => 'Tasca1 desc',
+//        'completed' => 0,
+//    ]);
+//
+//    $task2 = Task::create([
+//        'title' => 'Tasca2',
+//        'description' => 'Tasca2 desc',
+//        'completed' => 1,
+//    ]);
+//
+//    $task3 = Task::create([
+//        'title' => 'Tasca3',
+//        'description' => 'Tasca3 desc',
+//        'completed' => 0,
+//    ]);
+//
+//    $tasks = [
+//        $task1,
+//        $task2,
+//        $task3
+//    ];
     return view('tasks',[
-        'tasks' => $tasks
+        'tasks' => Task::all()
     ]);
 });
 
