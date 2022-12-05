@@ -9,5 +9,4 @@ class Usuari extends Model
 {
     use HasFactory;
     protected $guarded = [];
-
 }

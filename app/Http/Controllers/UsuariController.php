@@ -14,4 +14,5 @@ class UsuariController extends Controller
             'usuaris' => Usuari::all()
         ]);
     }
+
 }
