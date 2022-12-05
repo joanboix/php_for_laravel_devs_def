@@ -9,3 +9,4 @@ http://phpforlaravel.joanboix.me/
 
 ### Tags:
 - v1.0: Refactoritzar la vista tasks per utilitzar Laravel Blade. Afegits moustaches {{ }}.
+- v2.0: Refactoritzar la funció anònima que tenia a routes/web.php a un controlador. Video 111 Acabat. Users i Contact TODO.
