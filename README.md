@@ -11,3 +11,4 @@ http://phpforlaravel.joanboix.me/
 - v1.0: Refactoritzar la vista tasks per utilitzar Laravel Blade. Afegits moustaches {{ }}.
 - v2.0: Refactoritzar la funció anònima que tenia a routes/web.php a un controlador. Video 111 Acabat. Users i Contact TODO.
 - v2.1: Crear controladors per a les diferents pàgines. Crear Models per a Usuari i implementar-ho tot de forma correcta.
+- v2.2: Modificacions varies amb relació als usuaris.
